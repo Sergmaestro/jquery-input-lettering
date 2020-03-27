@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Input Lettering</title>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../src/jquery.inputLettering.js"></script>
+        <style>
+            #phoneInput .field-wrapper {
+                position: relative;
+                height: 100vh;
+                width: 100%;
+            }
+            #phoneInput .form-group {
+                min-width: 300px;
+                width: 50%;
+                margin: 8em auto;
+                display: flex;
+                border: 1px solid rgba(96,100,104,0.3);
+            }
+            #testWrapper {
+                min-width: 300px;
+                width: 50%;
+                margin: 0 auto;
+            }
+            #phoneInput .digit {
+                height: 43px;
+                border-radius: 0;
+                border: none;
+                text-align: center;
+                max-width: calc((100% / 10) - 1px);
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: calc(100% / 10);
+                outline-style: none;
+                padding: 5px 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            #phoneInput .digit + .digit {
+                border-left: 1px solid rgba(96,100,104,0.3);
+            }
+            @media (max-width: 480px) {
+                #phoneInput .digit {
+                    font-size: 16px;
+                    padding: 2px 0;
+                    height: 38px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="phoneInput">
+            <div class="field-wrapper">
+                <div class="form-group phone">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                    <input type="text" name="letters[]" class="digit"
+                           pattern="[0-9]*" inputmode="numeric" maxlength="1">
+                </div>
+                <div id="testWrapper">
+                    <input type="hidden" name="phone" value="">
+                    <h3>Input value:</h3>
+                    <p class="hidden-input-value"></p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function() {
+                $('#phoneInput').letteringInput({
+                    inputClass: 'digit',
+                    hiddenInputWrapperID: 'testWrapper',
+                    hiddenInputName: 'phone',
+                    onLetterKeyup: function ($item, event) {
+                        console.log($item, event);
+                    },
+                    onSet: function ($el, event, value) {
+                        console.log($el, event, value);
+                        $('.hidden-input-value').text($('input[name="phone"]', '#testWrapper').val());
+                    },
+                });
+            });
+        </script>
+    </body>
+</html>

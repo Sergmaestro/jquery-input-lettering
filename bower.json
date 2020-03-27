@@ -1,0 +1,24 @@
+{
+  "name": "jquery-input-lettering",
+  "license": "MIT",
+  "authors": [
+    "Sergei Kuznetsov <serhii.kuznietsov2@gmail.com>"
+  ],
+  "description": "Light-weight jquery input lettering plugin",
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "input",
+    "lettering",
+    "plugins"
+  ],
+  "main": "src/jquery.inputLettering.js",
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}
