@@ -43,27 +43,27 @@ The basic structure of the project is given in the following way:
 └── package.json
 ```
 
-#### [demo/](https://github.com/jquery-boilerplate/boilerplate/tree/master/demo)
+#### [demo/](https://github.com/sergmaestro/jquery-input-lettering/tree/master/demo)
 
 Contains simple demo HTML files.
 
-#### [dist/](https://github.com/jquery-boilerplate/boilerplate/tree/master/dist)
+#### [dist/](https://github.com/sergmaestro/jquery-input-lettering/tree/master/dist)
 
 This is where the generated files are stored once Grunt runs.
 
-#### [.editorconfig](https://github.com/jquery-boilerplate/boilerplate/tree/master/.editorconfig)
+#### [.editorconfig](https://github.com/sergmaestro/jquery-input-lettering/tree/master/.editorconfig)
 
 This file is for unifying the coding style for different editors and IDEs.
 
 > Check [editorconfig.org](http://editorconfig.org) if you haven't heard about this project yet.
 
-#### [.jshintrc](https://github.com/jquery-boilerplate/boilerplate/tree/master/.jshintrc)
+#### [.jshintrc](https://github.com/sergmaestro/jquery-input-lettering/tree/master/.jshintrc)
 
 List of rules used by JSHint to detect errors and potential problems in JavaScript.
 
 > Check [jshint.com](http://jshint.com/about/) if you haven't heard about this project yet.
 
-#### [Gruntfile.js](https://github.com/jquery-boilerplate/boilerplate/tree/master/Gruntfile.js)
+#### [Gruntfile.js](https://github.com/sergmaestro/jquery-input-lettering/tree/master/Gruntfile.js)
 
 Contains all automated tasks using Grunt.
 
@@ -71,7 +71,7 @@ Contains all automated tasks using Grunt.
 
 ## Contributing
 
-Check [CONTRIBUTING.md](https://github.com/jquery-boilerplate/boilerplate/blob/master/CONTRIBUTING.md) for more information.
+Check [CONTRIBUTING.md](https://github.com/sergmaestro/jquery-input-lettering/blob/master/CONTRIBUTING.md) for more information.
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "jquery-input-lettering",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Light-weight jquery input lettering plugin",
   "keywords": [
     "jquery-plugin",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jquery-input-lettering/jquery-boilerplate.git"
+    "url": "https://github.com/sergmaestro/jquery-input-lettering.git"
   },
   "bugs": {
     "url": "https://github.com/sergmaestro/jquery-input-lettering/issues"
