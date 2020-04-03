@@ -1,5 +1,7 @@
 # jQuery Input Lettering
 
+The plugin allows to create customized input (each character as a separate input). Default behaviour is the same as the native input
+
 ## Usage
 
 1. Include jQuery:
