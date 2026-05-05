@@ -1,7 +1,7 @@
 {
   "name": "jquery-input-lettering",
   "title": "Jquery input lettering",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Light-weight jquery input lettering plugin",
   "keywords": [
     "jquery-plugin",
@@ -18,13 +18,13 @@
     "url": "https://github.com/sergmaestro/jquery-input-lettering/issues"
   },
   "author": {
-    "name": "Sergei Kuznetsov",
+    "name": "Serhii Kuznietsov",
     "email": "serhii.kuznietsov2@gmail.com",
     "url": "https://github.com/sergmaestro"
   },
   "contributors": [
     {
-      "name": "Sergei Kuznetsov",
+      "name": "Serhii Kuznietsov",
       "email": "serhii.kuznietsov2@gmail.com",
       "url": "https://github.com/sergmaestro"
     }

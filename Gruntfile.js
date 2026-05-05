@@ -29,18 +29,8 @@ module.exports = function( grunt ) {
 		},
 
 		// Lint definitions
-		jshint: {
-			files: [ "src/jquery.inputLettering.js" ],
-			options: {
-				jshintrc: ".jshintrc"
-			}
-		},
-
-		jscs: {
-			src: "src/**/*.js",
-			options: {
-				config: ".jscsrc"
-			}
+		eslint: {
+			target: [ "src/**/*.js" ]
 		},
 
 		// Minify definitions
@@ -54,23 +44,13 @@ module.exports = function( grunt ) {
 			}
 		},
 
-		// watch for changes to source
-		// Better than calling grunt a million times
-		// (call 'grunt watch')
-		watch: {
-			files: [ "src/*" ],
-			tasks: [ "default" ]
-		}
-
 	} );
 
 	grunt.loadNpmTasks( "grunt-contrib-concat" );
-	grunt.loadNpmTasks( "grunt-contrib-jshint" );
-	grunt.loadNpmTasks( "grunt-jscs" );
 	grunt.loadNpmTasks( "grunt-contrib-uglify" );
-	grunt.loadNpmTasks( "grunt-contrib-watch" );
+	grunt.loadNpmTasks( "grunt-eslint" );
 
-// grunt.registerTask( "lint", [ "jshint", "jscs" ] );
+grunt.registerTask( "lint", [ "eslint" ] );
 grunt.registerTask( "build", [ "concat", "uglify" ] );
-grunt.registerTask( "default", [ "concat", "uglify", "watch" ] );
+grunt.registerTask( "default", [ "eslint", "concat", "uglify" ] );
 };
