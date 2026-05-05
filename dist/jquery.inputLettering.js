@@ -1,9 +1,9 @@
 /*
- *  jquery-input-lettering - v0.0.1
+ *  jquery-input-lettering - v0.1.3
  *  Light-weight jquery input lettering plugin
  *  https://github.com/sergmaestro/jquery-input-lettering
  *
- *  Made by Sergei Kuznetsov
+ *  Made by Serhii Kuznietsov
  *  Under MIT License
  */
 ;( function( $, window, document, undefined ) {

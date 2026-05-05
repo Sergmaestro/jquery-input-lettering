@@ -75,4 +75,4 @@ Check [CONTRIBUTING.md](https://github.com/sergmaestro/jquery-input-lettering/bl
 
 ## License
 
-[MIT License](http://mit-license.org/) © Sergei Kuznetsov
+[MIT License](http://mit-license.org/) © Serhii Kuznietsov
